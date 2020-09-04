@@ -77,3 +77,7 @@ struct ProfileIcon: View {
 }
 
 ```
+
+## Preview 
+
+![Preview](https://github.com/markvanwijnen/NavigationBarLargeTitleItems/preview.gif)
