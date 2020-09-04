@@ -5,6 +5,10 @@ An extension to SwiftUI that will allow items to be placed next to the navigatio
 > Warning: This package makes use of a private API class '_UINavigationBarLargeTitleView'.
 > Please be aware that this might get your app rejected when submitting it to the App Store.
 
+## Preview 
+
+![Preview](https://github.com/markvanwijnen/NavigationBarLargeTitleItems/blob/master/preview.gif)
+
 ## Installation
 
 ### Manual:
@@ -77,7 +81,3 @@ struct ProfileIcon: View {
 }
 
 ```
-
-## Preview 
-
-![Preview](https://github.com/markvanwijnen/NavigationBarLargeTitleItems/blob/master/preview.gif)
