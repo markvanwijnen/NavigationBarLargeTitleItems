@@ -39,7 +39,6 @@ let package = Package(
 
 ```swift
 import SwiftUI
-import NavigationBarLargeTitleItems
 
 struct ContentView: View {
     var body: some View {
@@ -50,7 +49,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Navigation")
-            .navigationBarLargeTitleItems(trailing: ProfileIcon().padding(.trailing, 20))
+            .navigationBarLargeTitleItems(trailing: ProfileIcon())
         }
     }
 }
@@ -72,6 +71,7 @@ struct ProfileIcon: View {
                 .foregroundColor(.red)
                 .frame(width: 36, height: 36)
         }
+        .offset(x: -20, y: 5)
     }
 }
 
