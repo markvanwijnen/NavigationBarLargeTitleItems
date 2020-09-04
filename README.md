@@ -39,6 +39,7 @@ let package = Package(
 
 ```swift
 import SwiftUI
+import NavigationBarLargeTitleItems
 
 struct ContentView: View {
     var body: some View {
