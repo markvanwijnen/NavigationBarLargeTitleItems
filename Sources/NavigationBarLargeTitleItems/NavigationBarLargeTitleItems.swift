@@ -19,7 +19,13 @@
 
 import SwiftUI
 
-final class NavigationBarLargeTitleItems<L : View>: UIViewControllerRepresentable {
+public extension View {
+    func navigationBarLargeTitleItems<L>(trailing: L) -> some View where L : View {
+        overlay(NavigationBarLargeTitleItems(trailing: trailing).frame(width: 0, height: 0))
+    }
+}
+
+fileprivate struct NavigationBarLargeTitleItems<L : View>: UIViewControllerRepresentable {
     typealias UIViewControllerType = Wrapper
     
     private let trailingItems: L
@@ -72,11 +78,5 @@ final class NavigationBarLargeTitleItems<L : View>: UIViewControllerRepresentabl
                 }
             }
         }
-    }
-}
-
-extension View {
-    func navigationBarLargeTitleItems<L>(trailing: L) -> some View where L : View {
-        overlay(NavigationBarLargeTitleItems(trailing: trailing).frame(width: 0, height: 0))
     }
 }
