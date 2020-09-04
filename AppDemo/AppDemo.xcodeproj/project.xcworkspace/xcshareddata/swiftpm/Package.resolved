@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NavigationBarLargeTitleItems",
+        "repositoryURL": "https://github.com/markvanwijnen/NavigationBarLargeTitleItems.git",
+        "state": {
+          "branch": "master",
+          "revision": "346d710fda622f8a2029a21dfcd2ec1650240be6",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
