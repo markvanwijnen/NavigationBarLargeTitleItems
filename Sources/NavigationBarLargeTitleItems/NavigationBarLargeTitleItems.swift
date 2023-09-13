@@ -78,5 +78,22 @@ fileprivate struct NavigationBarLargeTitleItems<L : View>: UIViewControllerRepre
                 }
             }
         }
+
+        override func viewWillDisappear(_: Bool) {
+            guard let navigationBar = navigationController?.navigationBar else {
+                return
+            }
+
+            guard let UINavigationBarLargeTitleView = NSClassFromString("_UINavigationBarLargeTitleView") else {
+                return
+            }
+
+            navigationBar.subviews.forEach {
+                subview in
+                if subview.isKind(of: UINavigationBarLargeTitleView.self) {
+                    subview.alpha = 0
+                }
+            }
+        }
     }
 }
