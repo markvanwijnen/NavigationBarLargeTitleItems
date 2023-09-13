@@ -63,6 +63,7 @@ fileprivate struct NavigationBarLargeTitleItems<L : View>: UIViewControllerRepre
                 if subview.isKind(of: UINavigationBarLargeTitleView.self) {
                     let controller = UIHostingController(rootView: representable.trailingItems)
                     controller.view.translatesAutoresizingMaskIntoConstraints = false
+                    controller.view.backgroundColor = UIColor.clear
                     subview.addSubview(controller.view)
                     
                     NSLayoutConstraint.activate([
