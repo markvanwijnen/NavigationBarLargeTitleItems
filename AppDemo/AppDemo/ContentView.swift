@@ -39,6 +39,7 @@ struct ProfileIcon: View {
                 .foregroundColor(.red)
                 .frame(width: 36, height: 36)
         }
-        .offset(x: -20, y: 5)
+        .padding([.trailing], 20)
+        .padding([.top], 5)
     }
 }
